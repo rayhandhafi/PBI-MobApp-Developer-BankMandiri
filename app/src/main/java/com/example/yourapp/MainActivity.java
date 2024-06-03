@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void fetchNews() {
         // Replace with your NewsAPI key
-        String apiKey = "YOUR_API_KEY";
+        String apiKey = "d1ee92f64dd54235954a39f443689cb9";
 
         newsService.getTopHeadlines("us", apiKey).enqueue(new Callback<NewsResponse>() {
             @Override
