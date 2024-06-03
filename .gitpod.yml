@@ -1,5 +1,23 @@
 image:
   file: .gitpod.Dockerfile
+
 tasks:
-  - init: ./gradlew clean
-    command: ./gradlew build
+  - init: ./gradlew build
+    command: ./gradlew run
+
+ports:
+  - port: 8080
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
+    - GabrielBB.vscode-lombok
+    - redhat.java
+    - redhat.vscode-xml
+    - mechatroner.rainbow-csv
+    - ms-vscode.cpptools
+    - ms-python.python
+    - ms-toolsai.jupyter
+    - ms-vscode-remote.remote-containers
+
